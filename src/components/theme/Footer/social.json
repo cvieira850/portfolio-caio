@@ -1,0 +1,28 @@
+[
+  {
+    "id": 0,
+    "name": "Telegram",
+    "link": "https://t.me/Cvieira850",
+    "icon": "/icons/telegram.svg"
+  },
+  {
+    "id": 1,
+    "name": "Github",
+    "link": "https://github.com/cvieira850",
+    "icon": "/icons/github.svg"
+  },
+  {
+    "id": 2,
+    "name": "LinkedIn",
+    
+    "link": "https://www.linkedin.com/in/caio-vieira-209b0716a",
+    "icon": "/icons/linkedin.svg"
+  },
+  {
+    "id": 3,
+    "name": "Whatsapp",
+    
+    "link": "https://api.whatsapp.com/send?phone=5521997020450&text=Ol%C3%A1%20Caio%2C%20visitei%20seu%20site%20e%20gostaria%20de%20marcar%20uma%20reuni%C3%A3o",
+    "icon": "/icons/whatsapp.svg"
+  }
+]
