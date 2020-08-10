@@ -48,7 +48,7 @@ export default () => (
     }}
   >
     {({ values, touched, errors, setFieldValue, isSubmitting }) => (
-      <Form>
+      <Form netlify-honeypot="bot-field" data-netlify="true">
         <InputField>
           <Input
             as={FastField}
