@@ -48,7 +48,11 @@ export default () => (
     }}
   >
     {({ values, touched, errors, setFieldValue, isSubmitting }) => (
-      <Form netlify-honeypot="bot-field" data-netlify="true">
+      <Form netlify-honeypot="bot-field" data-netlify="true" className="contact-form"
+        name="contact"
+        method="post"
+
+        action="/success">
         <input type="hidden" name="bot-field" />
         <input type="hidden" name="form-name" value="contact" />
         <InputField>
