@@ -25,18 +25,18 @@ export default () => (
     })}
     onSubmit={async ({ name, email, message }, { setSubmitting, resetForm, setFieldValue }) => {
       try {
-        await axios({
-          method: 'POST',
-          url: `${process.env.GATSBY_PORTFOLIO_FORMIK_ENDPOINT}`,
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          data: JSON.stringify({
-            name,
-            email,
-            message,
-          }),
-        });
+        // await axios({
+        //   method: 'POST',
+        //   url: `${process.env.GATSBY_PORTFOLIO_FORMIK_ENDPOINT}`,
+        //   headers: {
+        //     'Content-Type': 'application/json',
+        //   },
+        //   data: JSON.stringify({
+        //     name,
+        //     email,
+        //     message,
+        //   }),
+        // });
         setSubmitting(false);
         setFieldValue('success', true);
         setTimeout(() => resetForm(), 6000);
