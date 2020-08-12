@@ -37,6 +37,8 @@ export default () => (
             message,
           }),
         });
+
+
         setSubmitting(false);
         setFieldValue('success', true);
         setTimeout(() => resetForm(), 6000);
