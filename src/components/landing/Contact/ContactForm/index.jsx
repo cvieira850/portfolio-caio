@@ -6,11 +6,6 @@ import * as Yup from 'yup';
 import { Button, Input } from 'components/common';
 import { Error, Center, InputField } from './styles';
 
-const encode = (data) => {
-  return Object.keys(data)
-    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-    .join("&");
-}
 export default () => (
   <Formik
     initialValues={{
@@ -42,19 +37,6 @@ export default () => (
             message,
           }),
         });
-        await axios({
-          method: "POST",
-          url: '/',
-          headers: { "Content-Type": "application/x-www-form-urlencoded" },
-          body: encode({ "form-name": "contact-demo", ...values })
-        })
-          .then(() => {
-            // alert('Success');
-            // actions.resetForm()
-          })
-          .catch(() => {
-            // alert('Error');
-          })
 
 
         setSubmitting(false);
@@ -68,7 +50,7 @@ export default () => (
     }}
   >
     {({ values, touched, errors, setFieldValue, isSubmitting }) => (
-      <Form name="contact-demo" data-netlify={true}>
+      <Form>
         <InputField>
           <Input
             as={FastField}
