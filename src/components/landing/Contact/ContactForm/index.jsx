@@ -42,8 +42,9 @@ export default () => (
             message,
           }),
         });
-        await fetch("/", {
+        await axios({
           method: "POST",
+          url: '/',
           headers: { "Content-Type": "application/x-www-form-urlencoded" },
           body: encode({ "form-name": "contact-demo", ...values })
         })
