@@ -19,10 +19,10 @@ export const Footer = () => {
     }
     if (isMobile) {
       window.location.href =
-        'https://api.whatsapp.com/send?1=pt_BR&phone=5521997020450&text=Hello I visited your site and I would like to make an appointment';
+        'https://api.whatsapp.com/send?1=pt_BR&phone=5521997020450&text=Olá, visitei seu site e gostaria de marcar uma reunião.';
     } else {
       window.location.href =
-        'https://web.whatsapp.com/send?1=pt_BR&phone=5521997020450&text=Hello I visited your site and I would like to make an appointment';
+        'https://web.whatsapp.com/send?1=pt_BR&phone=5521997020450&text=Olá, visitei seu site e gostaria de marcar uma reunião.';
     }
   }
   return (
@@ -31,19 +31,19 @@ export const Footer = () => {
         <Details>
           <h2>Caio Vieira</h2>
           <span>
-            © All rights are reserved | {new Date().getFullYear()} | Made with{' '}
+            © Todos os direitos reservados | {new Date().getFullYear()} | Feito com{' '}
             <span aria-label="love" role="img">
               💖
             </span>{' '}
-            by{' '}
-            <a href="https://smakosh.com/?ref=portfolio-dev" rel="noopener noreferrer" target="_blank">
+            por{' '}
+            <a href="https://caiovieira.com.br" rel="noopener noreferrer" target="_blank">
               Caio Vieira
             </a>
           </span>
         </Details>
         <Links>
           {social.map(({ id, name, link, icon }) => (
-            <a key={id} href={link} target="_blank" rel="noopener noreferrer" aria-label={`follow me on ${name}`}>
+            <a key={id} href={link} target="_blank" rel="noopener noreferrer" aria-label={`siga me em  ${name}`}>
               <img width="24" src={icon} alt={name} />
             </a>
           ))}
